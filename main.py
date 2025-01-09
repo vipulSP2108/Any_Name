@@ -1,8 +1,14 @@
+"""
+This script calculates the factorial of a number.
+"""
+
 def factorial(n):
-    if n == 0 or n == 1:
+    """
+    Returns the factorial of a non-negative integer n.
+    """
+    if n in (0, 1):
         return 1
-    else:
-        return n * factorial(n - 1)
+    return n * factorial(n - 1)
 
 num = int(input("Enter a number: "))
 print(f"The factorial of {num} is {factorial(num)}")
