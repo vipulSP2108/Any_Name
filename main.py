@@ -1,5 +1,5 @@
 """
-This script calculates the factorial of a number.
+This script calculates the factorial of a number. 
 """
 
 def factorial(n):
