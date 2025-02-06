@@ -1,5 +1,3 @@
-import time
-
 """
 This script calculates the factorial of a number.
 """
@@ -27,24 +25,5 @@ def get_non_negative_integer():
         except ValueError:
             print("Invalid input! Please enter a valid integer.")
 
-def calculate_and_display_factorial():
-    """
-    Calculates and displays the factorial of a number, while showing the time taken for the calculation.
-    """
-    num = get_non_negative_integer()
-    start_time = time.time()  # Record the start time
-    result = factorial(num)
-    end_time = time.time()  # Record the end time
-    print(f"The factorial of {num} is {result}")
-    print(f"Time taken to calculate: {end_time - start_time:.6f} seconds")
-
-def main():
-    """
-    Main function that allows the user to calculate multiple factorials or exit.
-    """
-    while True:
-        calculate_and_display_factorial()
-        
-        continue_prompt = input("Do you want to calculate another factorial? (y/n): ").strip().lower()
-
-main()
+num = get_non_negative_integer()
+print(f"The factorial of {num} is {factorial(num)}")
